@@ -27,14 +27,14 @@ pipeline {
             }
         }
 
-        stage('Build') {
-            steps {
-                bat '''
-                    if not exist build mkdir build
-                    javac -d build src\\HelloJenkins.java
-                '''
-            }
-        }
+        // stage('Build') {
+        //     steps {
+        //         bat '''
+        //             if not exist build mkdir build
+        //             javac -d build src\\HelloJenkins.java
+        //         '''
+        //     }
+        // }
 
         stage('Test') {
             when {
