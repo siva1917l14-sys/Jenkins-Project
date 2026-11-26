@@ -6,11 +6,11 @@ pipeline {
         timestamps()
     }
 
-    parameters {
-        string(name: 'USER_NAME', defaultValue: 'Jenkins Learner', description: 'Name printed by the Java program')
-        choice(name: 'ENVIRONMENT', choices: ['DEV', 'QA', 'PROD'], description: 'Select the demo environment')
-        booleanParam(name: 'RUN_TESTS', defaultValue: true, description: 'Run the Java smoke test')
-    }
+    // parameters {
+    //     string(name: 'USER_NAME', defaultValue: 'Jenkins Learner', description: 'Name printed by the Java program')
+    //     choice(name: 'ENVIRONMENT', choices: ['DEV', 'QA', 'PROD'], description: 'Select the demo environment')
+    //     booleanParam(name: 'RUN_TESTS', defaultValue: true, description: 'Run the Java smoke test')
+    // }
 
     stages {
         stage('Checkout') {
